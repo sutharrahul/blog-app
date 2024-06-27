@@ -1,11 +1,21 @@
-import React from "react";
-import { Button } from "./components/ui/button";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import authService from "./appwrite/auth";
 
 function App() {
-  console.log(import.meta.env.VITE_APPWRITE_URL);
+  const [loading, setLoading] = useState(true);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    authService
+      .getCurrentUser()
+      .then((userData) => {})
+      .finally();
+  }, []);
+
   return (
     <div className="px-8">
-      <Button>hello</Button>
+      <h1>The blog apps</h1>
     </div>
   );
 }
