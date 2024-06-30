@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import authService, { AuthService } from "@/appwrite/auth";
+import authService from "@/appwrite/auth";
 import { logout } from "@/store/authSlice";
 import { Button } from "../ui/button";
 
@@ -13,7 +13,7 @@ function LogoutBtn() {
     });
   };
 
-  return <Button>Logout</Button>;
+  return <Button onClick={logoutHandler}>Logout</Button>;
 }
 
 export default LogoutBtn;
