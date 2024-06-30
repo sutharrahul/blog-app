@@ -11,6 +11,7 @@ import Singup from "./Singup";
 import Login from "./Login";
 import PostCard from "./PostCard";
 import PostForm from "./PostForm/PostForm";
+import AuthLayout from "./AuthLayout";
 export {
   Header,
   Footer,
@@ -25,4 +26,5 @@ export {
   Login,
   PostCard,
   PostForm,
+  AuthLayout,
 };
