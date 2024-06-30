@@ -7,7 +7,10 @@ import { Button } from "./ui/button";
 import Input from "postcss/lib/input";
 import Select from "./Select";
 import RTE from "./RTE";
-
+import Singup from "./Singup";
+import Login from "./Login";
+import PostCard from "./PostCard";
+import PostForm from "./PostForm/PostForm";
 export {
   Header,
   Footer,
@@ -18,4 +21,8 @@ export {
   Input,
   Select,
   RTE,
+  Singup,
+  Login,
+  PostCard,
+  PostForm,
 };
